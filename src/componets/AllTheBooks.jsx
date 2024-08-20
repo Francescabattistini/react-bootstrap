@@ -10,14 +10,15 @@ export function AllTheBooks () {
 return(
     <> 
     
-     <Card className= "m-4 text-center" style={{ width: '18rem' }} key= {book.asin} >
-      <Card.Img className=" w-75" variant="top" src={book.img}/>
-      <Card.Body>
-        <Card.Title>{book.title} </Card.Title>
+     <Card className= "m-4 text-center" style={{ height:"30rem", width: '18rem' }} key= {book.asin} >
+       <div style={{ height: '65%' }}>
+        <Card.Img className="h-100 "  variant="top" src={book.img}/></div>
+      <Card.Body >
+        <Card.Title className="text-truncate" >{book.title} </Card.Title>
         <Card.Text>
-        
+        <h4>{book.price}0€</h4>
         </Card.Text>
-        <Button variant="primary">buy</Button>
+        <Button className=" bottom-0 " variant="primary ">buy</Button>
       </Card.Body>
     </Card>
     

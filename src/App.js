@@ -13,11 +13,12 @@ function App() {
         <CustomNavbar />
       </header>
       <div>
-        <AllTheBooks />
-      </div>
-      <div>
         <Welcome />
       </div>
+      <div>
+        <AllTheBooks />
+      </div>
+
       <footer>
         <CustomFooter />
       </footer>

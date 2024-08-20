@@ -2,9 +2,9 @@ import { Navbar, Container, Nav } from 'react-bootstrap'
 
 const CustomNavbar = function () {
   return (
-    <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark">
+    <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark" className='py-4'>
       <Container fluid>
-        <Navbar.Brand href="#home">Libreria</Navbar.Brand>
+        <Navbar.Brand href="#home">Books Store</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
