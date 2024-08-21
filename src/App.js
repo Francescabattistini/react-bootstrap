@@ -3,8 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavbar from "./componets/CustomNavbar";
 import { CustomFooter } from "./componets/CustumFooter";
 import { Welcome } from "./componets/Welcome";
-import { AllTheBooks } from "./componets/AllTheBooks";
+/* import { AllTheBooks } from "./componets/AllTheBooks"; */
+import fantasy from "./books/fantasy.json";
+import { BookList } from "./componets/BookList";
 import "./App.css";
+import { SingleBook } from "./componets/SingleBook";
 
 function App() {
   return (
@@ -16,7 +19,8 @@ function App() {
         <Welcome />
       </div>
       <div>
-        <AllTheBooks />
+        {/*     <AllTheBooks />  */}
+        <BookList listaBook={fantasy} />
       </div>
 
       <footer>
