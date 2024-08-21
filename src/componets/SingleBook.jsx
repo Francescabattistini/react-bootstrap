@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Button, Card } from "react-bootstrap";
-
+import { useState } from "react";
 export class SingleBook extends Component {
   state = {
     selected: false,
@@ -10,7 +10,10 @@ export class SingleBook extends Component {
     return (
         <> 
     
-     <Card className= "m-4 text-center" style={{ height:"30rem", width: '18rem' }} >
+     <Card className={this.state.selected ? "border-danger" : ""}style={{ height:"30rem", width: '18rem' }} 
+  
+     onClick={() => this.setState(prevState => ({ selected: !prevState.selected }))}
+     >
        <div style={{ height: '65%' }}>
         <Card.Img className="h-100 "  variant="top" src={this.props.img}/></div>
       <Card.Body >
