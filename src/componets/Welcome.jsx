@@ -4,7 +4,7 @@ export function Welcome (){
   return  (
         <>
 <Alert variant="primary" className='text-center'>
-      <Alert.Heading>Welcome!!!</Alert.Heading>
+      <Alert.Heading>Welcome to Epibooks!!!</Alert.Heading>
       <p>
         Aww yeah, you successfully read this important alert message. This
         example text is going to run a bit longer so that you can see how

@@ -5,9 +5,8 @@ import { CustomFooter } from "./componets/CustumFooter";
 import { Welcome } from "./componets/Welcome";
 /* import { AllTheBooks } from "./componets/AllTheBooks"; */
 import fantasy from "./books/fantasy.json";
-import { BookList } from "./componets/BookList";
+import BookList from "./componets/BookList";
 import "./App.css";
-import { SingleBook } from "./componets/SingleBook";
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
       </div>
       <div>
         {/*     <AllTheBooks />  */}
-        <BookList listaBook={fantasy} />
+        <BookList books={fantasy} />
       </div>
 
       <footer>
